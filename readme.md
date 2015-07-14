@@ -62,6 +62,7 @@ Rscript Xgboost_training_v10b.R
 Rscript Xgboost_training_v10c.R
 Rscript Xgboost_training_v11.R
 Rscript Xgboost_training_v12.R
+Rscript svm_model_v20150703.R
 ```
 
 ## Creating second-layer models (stacking)
