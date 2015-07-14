@@ -48,6 +48,15 @@ Rscript generate_5fold_keys.R
 ```
 python knn_bagging_5.py
 python rf_bagging_5.py
+python ann10b_ver2.py
+python ann_250_tfidf.py
+python ann_alt.py
+python ann_wm_c1r2.py
+python ann10b.py
+python ann_1234_7_ver2.py
+python ann_alt_ngram_wm.py
+python ann10b_noamazon.py
+python ann_tfidf.py
 ```
 
 ## Creating second-layer models (stacking)
