@@ -57,6 +57,11 @@ python ann_1234_7_ver2.py
 python ann_alt_ngram_wm.py
 python ann10b_noamazon.py
 python ann_tfidf.py
+Rscript Xgboost_training_v10.R
+Rscript Xgboost_training_v10b.R
+Rscript Xgboost_training_v10c.R
+Rscript Xgboost_training_v11.R
+Rscript Xgboost_training_v12.R
 ```
 
 ## Creating second-layer models (stacking)
