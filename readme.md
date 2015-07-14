@@ -22,7 +22,6 @@ python AddProps.py
 python AddProps2.py
 python AddProps3.py
 python RelevanceGroup.py
-Rscript generate_5fold_keys.R
 python word_features.py
 python extract_TF_IDF.py
 ```
@@ -34,6 +33,11 @@ Rscript create_modeling_set_08b.R
 Rscript create_modeling_set_08c.R
 Rscript create_modeling_set_09.R
 Rscript create_modeling_set_10.R
+```
+
+## Generate 5-fold cross validation keys
+```
+Rscript generate_5fold_keys.R
 ```
 
 ## Create different models
