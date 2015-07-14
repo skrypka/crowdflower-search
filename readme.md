@@ -24,12 +24,16 @@ python AddProps3.py
 python RelevanceGroup.py
 Rscript generate_5fold_keys.R
 python word_features.py
+python extract_TF_IDF.py
+```
+
+# Create modeling datasets (needed for the R-based models)
+```
 Rscript create_modeling_set_08.R
 Rscript create_modeling_set_08b.R
 Rscript create_modeling_set_08c.R
 Rscript create_modeling_set_09.R
 Rscript create_modeling_set_10.R
-python extract_TF_IDF.py
 ```
 
 # Create different models
