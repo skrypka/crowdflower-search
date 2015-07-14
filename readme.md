@@ -1,4 +1,4 @@
-# Preparing
+## Preparing
 
 install R packages:
 `RWeka stringr readr stringdist tm qdap SnowballC combinat`
@@ -8,7 +8,7 @@ install Python packages
 
 download Word2vec Google News( `https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing` ) unzip and put link into word2_vec_test.py in line 89
 
-# Generate features
+## Generate features
 ```
 python word2_vec_test.py
 Rscript cleanData_02.R
@@ -27,7 +27,7 @@ python word_features.py
 python extract_TF_IDF.py
 ```
 
-# Create modeling datasets (needed for the R-based models)
+## Create modeling datasets (needed for the R-based models)
 ```
 Rscript create_modeling_set_08.R
 Rscript create_modeling_set_08b.R
@@ -36,7 +36,7 @@ Rscript create_modeling_set_09.R
 Rscript create_modeling_set_10.R
 ```
 
-# Create different models
+## Create different models
 ```
 python knn_bagging_5.py
 python rf_bagging_5.py
