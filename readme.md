@@ -44,8 +44,18 @@ Rscript create_modeling_set_10.R
 Rscript generate_5fold_keys.R
 ```
 
-## Creating different models
+## Creating single-layer models
 ```
 python knn_bagging_5.py
 python rf_bagging_5.py
+```
+
+## Creating second-layer models (stacking)
+```
+
+```
+
+## Creating final ensemble
+```
+
 ```
