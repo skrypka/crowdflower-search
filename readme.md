@@ -33,5 +33,7 @@ python extract_TF_IDF.py
 ```
 
 # Create different models
+```
 python knn_bagging_5.py
 python rf_bagging_5.py
+```
