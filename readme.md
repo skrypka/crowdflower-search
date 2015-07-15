@@ -28,6 +28,7 @@ python AddProps3.py
 python RelevanceGroup.py
 python word_features.py
 python extract_TF_IDF.py
+python kagg_distance.py
 ```
 
 ## Creating modeling datasets (needed for the R-based models)
