@@ -102,8 +102,8 @@ if __name__ == '__main__':
 
 # Load the training file
     STOPWORDS = nltk.corpus.stopwords.words('english')
-    train = pd.read_csv('train.csv')
-    test = pd.read_csv('test.csv')
+    train = pd.read_csv('input/train.csv')
+    test = pd.read_csv('input/test.csv')
 
 # we dont need ID columns
     idx = test.id.values.astype(int)
@@ -148,23 +148,23 @@ if __name__ == '__main__':
     X =  svd.fit_transform(X)
     X_test = svd.transform(X_test)
 
-    train_ngrams = pd.read_csv("ngramMatch_07.csv").fillna("").values
-    test_ngrams  = pd.read_csv("ngramMatch_test_07.csv").fillna("").values
+    train_ngrams = pd.read_csv("data/ngramMatch_07.csv").fillna("").values
+    test_ngrams  = pd.read_csv("data/ngramMatch_test_07.csv").fillna("").values
 
-    train_1234 = pd.read_csv("train1234_1.csv").fillna("").values
-    test_1234 = pd.read_csv("test1234_1.csv").fillna("").values
+    train_1234 = pd.read_csv("data/train1234_1.csv").fillna("").values
+    test_1234 = pd.read_csv("data/test1234_1.csv").fillna("").values
 
-    train_1234_2 = pd.read_csv("train1234_2.csv").fillna("").values
-    test_1234_2 = pd.read_csv("test1234_2.csv").fillna("").values
+    train_1234_2 = pd.read_csv("data/train1234_2.csv").fillna("").values
+    test_1234_2 = pd.read_csv("data/test1234_2.csv").fillna("").values
 
-    train_1234_3 = pd.read_csv("train1234_3.csv").fillna("").values
-    test_1234_3 = pd.read_csv("test1234_3.csv").fillna("").values
+    train_1234_3 = pd.read_csv("data/train1234_3.csv").fillna("").values
+    test_1234_3 = pd.read_csv("data/test1234_3.csv").fillna("").values
 
-    train_alt_query = pd.read_csv('alt_query_features_train.csv').fillna("").values
-    test_alt_query = pd.read_csv('alt_query_features_test.csv').fillna("").values
+    train_alt_query = pd.read_csv('data/alt_query_features_train.csv').fillna("").values
+    test_alt_query = pd.read_csv('data/alt_query_features_test.csv').fillna("").values
 
-    train_feature_noun = pd.read_csv('product_simscore_train_NEW.csv').fillna("").values
-    test_feature_noun = pd.read_csv('product_simscore_test_NEW.csv').fillna("").values
+    train_feature_noun = pd.read_csv('data/product_simscore_train.csv').fillna("").values
+    test_feature_noun = pd.read_csv('data/product_simscore_test.csv').fillna("").values
 
     print('train ngrams shape',train_ngrams.shape)
 
@@ -210,7 +210,7 @@ if __name__ == '__main__':
 
     #X = X_y[:,:X_y.shape[1]-2]
 
-    indices = pd.read_csv('cv_5fold_keys.csv')
+    indices = pd.read_csv('data/cv_5fold_keys.csv')
 
     kappa_list = []
     for i in range (1,6):
@@ -226,7 +226,7 @@ if __name__ == '__main__':
         kappa_list.append(quadratic_weighted_kappa(y_cv,y_pred))
 
         cv_sub = pd.DataFrame({ "prediction": y_pred})
-        cv_sub.to_csv('sub_d_cv_'+str(i)+'.csv', index=False)
+        cv_sub.to_csv('data/sub_d_cv_'+str(i)+'.csv', index=False)
 
     print('kappa mean', np.array(kappa_list).mean())
 
@@ -239,4 +239,4 @@ if __name__ == '__main__':
 
 # Create your first submission file
     submission = pd.DataFrame({"id": idx, "prediction": preds})
-    submission.to_csv("submission_e.csv", index=False)
+    submission.to_csv("data/submission_e.csv", index=False)
