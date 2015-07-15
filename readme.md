@@ -1,7 +1,7 @@
 ## Preparing
 
 install R packages:
-`RWeka stringr readr stringdist tm qdap SnowballC combinat`
+`RWeka stringr readr stringdist tm qdap SnowballC combinat e1071 xgboost h2o`
 
 install Python packages
 `pandas numpy keras Levenshtein BeautifulSoup nltk`
