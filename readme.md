@@ -70,6 +70,7 @@ python svm_alejandro.py
 ## Creating second-layer models (stacking)
 ```
 Rscript masterset_v04.R
+python ensemblenn.py
 ```
 
 ## Creating final ensemble
