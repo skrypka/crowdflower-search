@@ -1,4 +1,3 @@
-
 """
 Beating the Benchmark
 Search Results Relevance @ Kaggle
@@ -151,14 +150,14 @@ if __name__ == '__main__':
     train_ngrams = pd.read_csv("data/ngramMatch_07.csv").fillna("").values
     test_ngrams  = pd.read_csv("data/ngramMatch_test_07.csv").fillna("").values
 
-    train_1234 = pd.read_csv("data/train1234.csv").fillna("").values
-    test_1234 = pd.read_csv("data/test1234.csv").fillna("").values
+    train_1234 = pd.read_csv("data/train1234.csv", header=None).fillna("").values
+    test_1234 = pd.read_csv("data/test1234.csv", header=None).fillna("").values
 
-    train_1234_2 = pd.read_csv("data/train1234_2.csv").fillna("").values
-    test_1234_2 = pd.read_csv("data/test1234_2.csv").fillna("").values
+    train_1234_2 = pd.read_csv("data/train1234_2.csv", header=None).fillna("").values
+    test_1234_2 = pd.read_csv("data/test1234_2.csv", header=None).fillna("").values
 
-    train_1234_3 = pd.read_csv("data/train1234_3.csv").fillna("").values
-    test_1234_3 = pd.read_csv("data/test1234_3.csv").fillna("").values
+    train_1234_3 = pd.read_csv("data/train1234_3.csv", header=None).fillna("").values
+    test_1234_3 = pd.read_csv("data/test1234_3.csv", header=None).fillna("").values
 
     train_test_alt = pd.read_csv('data/alt_query_features_train_and_test_v01.csv').values
     train_alt_query = train_test_alt[:10158]
