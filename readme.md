@@ -64,6 +64,7 @@ Rscript Xgboost_training_v11.R
 Rscript Xgboost_training_v12.R
 Rscript svm_model_v20150703.R
 Rscript h2o_training_v20150616.R
+python svm_alejandro.py
 ```
 
 ## Creating second-layer models (stacking)
