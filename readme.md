@@ -1,7 +1,7 @@
 ## Preparing
 
 install R packages:
-`RWeka stringr readr stringdist tm qdap SnowballC combinat`
+`RWeka stringr readr stringdist tm qdap SnowballC combinat e1071 xgboost h2o`
 
 install Python packages
 `pandas numpy keras Levenshtein BeautifulSoup nltk`
@@ -69,10 +69,10 @@ python svm_alejandro.py
 
 ## Creating second-layer models (stacking)
 ```
-
+Rscript masterset_v04.R
 ```
 
 ## Creating final ensemble
 ```
-
+Rscript create_ensemble.R
 ```
