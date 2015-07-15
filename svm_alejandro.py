@@ -160,8 +160,9 @@ if __name__ == '__main__':
     train_1234_3 = pd.read_csv("data/train1234_3.csv").fillna("").values
     test_1234_3 = pd.read_csv("data/test1234_3.csv").fillna("").values
 
-    train_alt_query = pd.read_csv('data/alt_query_features_train.csv').fillna("").values
-    test_alt_query = pd.read_csv('data/alt_query_features_test.csv').fillna("").values
+    train_test_alt = pd.read_csv('data/alt_query_features_train_and_test_v01.csv').values
+    train_alt_query = train_test_alt[:10158]
+    test_alt_query = train_test_alt[10158:]
 
     train_feature_noun = pd.read_csv('data/product_simscore_train.csv').fillna("").values
     test_feature_noun = pd.read_csv('data/product_simscore_test.csv').fillna("").values
